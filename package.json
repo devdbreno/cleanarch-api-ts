@@ -1,7 +1,33 @@
 {
   "name": "cleanarch-api-ts",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Clean Architecture API TypeScript",
   "repository": "git@github.com:devdbreno/cleanarch-api-ts.git",
-  "license": "MIT"
+  "license": "GPL-3.0",
+  "author": "devdbreno <dbrenoti@gmail.com>",
+  "scripts": {
+    "docker": "docker run clean-api-ts",
+    "start:prod": "node dist/main.js",
+    "start:dev": "nodemon src/main.ts",
+    "predocker": "docker build -t clean-api-ts .",
+    "prestart:prod": "npm run build",
+    "docker-compose": "docker-compose up",
+    "update": "npm-check -s -u",
+    "build": "tsc -p tsconfig.build.json",
+    "prebuild": "rimraf dist"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.1",
+    "nodemon": "^2.0.4",
+    "npm-check": "^5.9.2",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  },
+  "_moduleAliases": {
+    "@": "src"
+  }
 }
