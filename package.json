@@ -1,0 +1,7 @@
+{
+  "name": "cleanarch-api-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:devdbreno/cleanarch-api-ts.git",
+  "license": "MIT"
+}
