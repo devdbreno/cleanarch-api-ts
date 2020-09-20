@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  clean-api-ts:
+    container_name: clean-api-ts
+    build:
+      context: .
+      target: development
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - ${PORT}:${PORT}
+      - 9229:9229
+    command: npm run start:dev
+    env_file: .env
