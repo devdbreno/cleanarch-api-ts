@@ -1,0 +1,12 @@
+{
+  "root": true,
+  "extends": "standard-with-typescript",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "sourceType": "module"
+  },
+  "env": {
+    "node": true,
+    "jest": true
+  }
+}

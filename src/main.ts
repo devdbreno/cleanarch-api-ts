@@ -1,1 +1,5 @@
-console.log(process.env)
+function test2 (params: string): void {
+  console.log(params)
+}
+
+test2('abc')
