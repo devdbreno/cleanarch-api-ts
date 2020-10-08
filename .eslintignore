@@ -1,14 +1,1 @@
-**/*.js
 node_modules
-.git
-.env
-.gitignore
-docker-compose.yml
-Dockerfile
-LICENSE
-nodemon.json
-package-lock.json
-package.json
-README.md
-tsconfig.build.json
-tsconfig.json
